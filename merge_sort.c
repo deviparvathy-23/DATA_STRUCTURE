@@ -2,14 +2,14 @@
 int main() 
 { 
     int arr1[20],arr2[20],arr3[40],i,j,k,m,n; 
-    printf("Enter the elements of the array:"); 
+    printf("Enter no of elements of the array:"); 
     scanf("%d",&m); 
     for(i=0;i<m;i++) 
     { 
         printf("Enter the element:"); 
         scanf("%d",&arr1[i]); 
     } 
-    printf("Enter the elements of the array:"); 
+    printf("Enter no of elements of the array:"); 
     scanf("%d",&n); 
     for(j=0;j<n;j++) 
     { 
@@ -31,6 +31,11 @@ int main()
             j++; 
             k++; 
         } 
+        else
+        {
+            arr3[k++] = arr1[i++];
+            j++;
+        }
     } 
     if(i<m) 
     { 
